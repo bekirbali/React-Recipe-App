@@ -6,6 +6,7 @@
   background-color: $searchGreen;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  text-align: center;
   img {
     border-radius: 2rem;
     width: 20%;
@@ -24,6 +25,14 @@
     }
     &::-webkit-scrollbar {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    img {
+      width: 35%;
     }
   }
 }
