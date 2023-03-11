@@ -7,7 +7,10 @@ const Navbar = ({ user, setUser }) => {
   return (
     <div className={styles.nav}>
       <div className={styles.logo}>
-        <img width="150px" src={restaurantLogo} alt="" />
+        <NavLink to="/">
+          <img width="150px" src={restaurantLogo} alt="" />
+        </NavLink>
+
         <h1>Taste Avenue</h1>
       </div>
       <ul className={styles.list}>
