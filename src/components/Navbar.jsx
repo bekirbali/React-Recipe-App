@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
-import restaurantLogo from "../assets/restaurantLogo.png";
+import restaurantLogo from "../assets/restaurantlogo.png";
 
 const Navbar = ({ user, setUser }) => {
   return (
