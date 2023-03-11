@@ -40,6 +40,7 @@
         }
         input {
           width: 50%;
+          min-width: 150px;
           border-radius: 0.5rem;
           border: 1px solid $darkGreen;
           color: $purple;
@@ -86,7 +87,6 @@
     padding: 1rem;
     background-color: $searchGreen;
     .basic-title {
-      color: $darkGreen;
       text-align: center;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       letter-spacing: 1rem;
@@ -107,6 +107,7 @@
       }
       input {
         width: 50%;
+        min-width: 150px;
         border-radius: 0.5rem;
         border: 1px solid $darkGreen;
         color: $purple;
@@ -121,8 +122,30 @@
 }
 
 @media screen and (max-width: 768px) {
-  .options {
-    flex-direction: column;
-    align-items: center;
+  .search {
+    button {
+      width: 7rem;
+    }
+    .advanced {
+      .advanced-title {
+        h2 {
+          font-size: 1.2rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+    }
+    .options {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .basic {
+      .basic-title {
+        h2 {
+          font-size: 1.2rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+    }
   }
 }

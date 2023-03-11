@@ -39,7 +39,17 @@ const Navbar = ({ user, setUser }) => {
         </li>
         {!user ? (
           <li>
-            <NavLink to="/login">Login</NavLink>
+            <NavLink
+              to="/login"
+              style={({ isActive }) => {
+                return {
+                  backgroundColor: isActive && "#b3fabc",
+                  border: isActive && "1px solid #0d851b",
+                };
+              }}
+            >
+              Login
+            </NavLink>
           </li>
         ) : (
           <li>

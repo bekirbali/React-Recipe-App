@@ -1,8 +1,11 @@
+@import "../scss/variables";
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  background-color: $searchGreen;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   img {
     border-radius: 2rem;
     width: 20%;

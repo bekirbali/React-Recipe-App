@@ -1,0 +1,40 @@
+@import "../scss/variables";
+
+.login {
+  width: 50%;
+  margin: auto;
+  background-color: $searchGreen;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1rem;
+  align-items: center;
+  color: $purple;
+  backdrop-filter: blur(5px);
+  margin-bottom: 1rem;
+  label {
+    text-align: left;
+    width: 50%;
+    min-width: 150px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  input {
+    padding-left: 0.5rem;
+    width: 50%;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid $darkGreen;
+    min-width: 150px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    width: 25%;
+    min-width: 150px;
+    margin-top: 0.5rem;
+  }
+}

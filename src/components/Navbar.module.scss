@@ -29,22 +29,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
+  .nav {
     flex-direction: column;
     align-items: center;
-    h1 {
-      text-align: center;
+    padding: 0.2rem 0;
+    gap: 1rem;
+    .logo {
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        text-align: center;
+      }
     }
-  }
-  .list {
-    flex-direction: column;
-
-    li {
+    .list {
       display: flex;
       justify-content: center;
-      a {
-        color: red;
-      }
+      gap: 0.2rem;
     }
   }
 }
