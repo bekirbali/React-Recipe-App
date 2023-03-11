@@ -27,7 +27,6 @@ const Home = () => {
       `https://api.edamam.com/api/recipes/v2?type=public&q=${search}&app_id=e44778be&app_key=500896e362933a61a101f5b90e26f6d1`
     );
     setData(data.hits);
-    console.log(data);
   };
 
   return (
